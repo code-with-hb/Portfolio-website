@@ -51,6 +51,17 @@
             margin: 0 20px;
 
         }
+         nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+
+        }
+        nav ul li a:hover {
+            color: rgb(165, 165, 238);
+            font-size: 1.02rem;
+
+        }   
 
         .left {
             font-size: 1.5rem;
@@ -87,10 +98,10 @@
             <div class="right">
 
                 <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me </a></li>
                 </ul>
 
             </div>
@@ -102,6 +113,7 @@
                 Hi, I'm Hemanta Boro
                 <div>A passionate Web developer </div>
                 <div> and Data Analyst</div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="bg.png" alt="Profile Picture">
@@ -110,6 +122,15 @@
 
 
     </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hello Everyone!', 'Welcome to my portfolio website!'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        }); 
+    </script>
 </body>
 
 </html>
